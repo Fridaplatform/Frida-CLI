@@ -2,7 +2,7 @@ from typing import Dict
 import os
 
 
-HOME_PATH = os.environ.get("HOME")
+HOME_PATH = os.path.expanduser("~")
 config_file_path = f"{HOME_PATH}/.fridacli"
 BOT_NAME = "Frida"
 
